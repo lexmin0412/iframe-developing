@@ -8,7 +8,7 @@ iframe 开发示例。
 
 ```js
 setInterval(() => {
-			const iframeContainer = document.getElementById('iframe')
-			const iframeContainerHeight = iframeContainer.contentWindow.document.getElementsByClassName('iframe-container')[0].scrollHeight  // iframe-container 为 iframe 子页面中最外层盒子的类名，这里的问题是如果直接获取 iframe html/body 的 scrollHeight 会造成手动设置后无法再自适应撑开，导致只能改变一次。
-		}, 1000);
+	const iframeContainer = document.getElementById('iframe')
+	const iframeContainerHeight = iframeContainer.contentWindow.document.getElementsByClassName('iframe-container')[0].scrollHeight  // iframe-container 为 iframe 子页面中最外层盒子的类名，这里的问题是如果直接获取 iframe html/body 的 scrollHeight 会造成手动设置后无法再自适应撑开，导致只能改变一次。
+}, 1000);
 ```
