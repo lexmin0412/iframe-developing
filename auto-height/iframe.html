@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.iframe-container {
+			background-color: #45aafa;
+		}
+		html, body, div {
+			padding: 0;
+			border: 0;
+			margin: 0
+		}
+	</style>
+</head>
+<body>
+	<div class="iframe-container">
+		<!-- this is iframe container -->
+	</div>
+	<script>
+		const element = document.createElement('div')
+		element.style.height = '1800px'
+		element.innerHTML = 'new Element'
+		element.style.backgroundColor = '#ffe400'
+		const iframeContainer =
+		document.getElementsByClassName('iframe-container')[0].appendChild(element)
+
+		setTimeout(() => {
+			element.style.height = '400px'
+		}, 5000);
+	</script>
+</body>
+</html>
