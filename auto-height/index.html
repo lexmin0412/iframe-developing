@@ -25,6 +25,7 @@
 		setInterval(() => {
 			const iframeContainer = document.getElementById('iframe')
 			const iframeContainerHeight = iframeContainer.contentWindow.document.getElementsByClassName('iframe-container')[0].scrollHeight
+			iframeContainer.height = iframeContainerHeight
 		}, 1000);
 	</script>
 </body>
